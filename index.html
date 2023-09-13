@@ -15,5 +15,24 @@
     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
     
     <script src="./app.js"></script>
+
+    <button id="myButton">Click Me</button>
+    <p id="output"></p>
+  
+    <script>
+      // button event added
+      const button = document.getElementById("myButton");
+      const output = document.getElementById("output");
+  
+      // Function to be executed when the button is clicked
+      function handleClick() {
+        output.textContent = "Button clicked!";
+      }
+  
+      // Add an event listener to the button element
+      button.addEventListener("click", handleClick);
+    </script>
+
+
 </body>
 </html>

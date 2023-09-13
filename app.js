@@ -63,3 +63,80 @@ console.log("Last Name:", person.lastName);
 console.log("Age:", person.age);
 
 // Assignment 2.4: Variables completed on 09/10/2023
+
+const name = "Alex Ox";
+
+function logger(){
+    console.log('Party Time');
+    console.log('Party Time');
+    console.log('Party Time');
+    console.log('Party Time');
+
+}
+
+logger(); // Function example from Dev Ed video
+
+const title = "Alex Ox 2";
+
+function adder(num1, num2){
+    console.log(num1 + num2);
+}
+
+adder(5,10); // Passing Parameter In, Output: 15
+
+const up = "Upper Alex Ox";
+const artist = "LexLocks";
+
+function toUpper(text){
+    const upperCased = text.toUpperCase();
+    console.log(upperCased);
+
+}
+
+toUpper(up);
+toUpper(artist); // Invoking funtion, example #2
+
+function add(a, b) {
+    return a + b;
+  }
+  
+  const sum = add(5, 3); // Passing Parameter Out
+  console.log(sum);     // Output: 8
+
+
+  
+// Creating an object literal
+const userData = {
+    firstName: "Lex",
+    lastName: "Locks",
+    age: 24,
+    isStudent: false,
+    address: {
+      street: "Garnet Sunset",
+      city: "Anytown",
+      zipCode: "12345"
+    },
+    hobbies: ["Reading", "Drawing", "Watching TV"],
+    sayHello: function() {
+      console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+    }
+  };
+  
+  // Accessing object properties
+  console.log(userData.firstName);         // Output: "Lex"
+  console.log(userData.age);               // Output: 24
+  console.log(userData.address.city);      // Output: "Anytown"
+  console.log(userData.hobbies[1]);        // Output: "Reading,Drawing,Watching TV"
+  
+  // Calling an object method
+  userData.sayHello();                     // Output: "Hello, my name is Lex Locks"
+
+
+  const str = "Hello, World!";
+const length = str.length; // length is 13, "Length" String Method 
+
+// Assignment 3.4: Functions and Parameters completed on 09/13/2023
+
+  
+
+
