@@ -137,6 +137,105 @@ const length = str.length; // length is 13, "Length" String Method
 
 // Assignment 3.4: Functions and Parameters completed on 09/13/2023
 
-  
+ 
+
+// DevEd Tutorial on "If Else Statments" 9/20/2023
+
+const age = 18;
+
+if (age >= '18') {
+  console.log("You are good to go!");
+} else if (age < 15) {
+  console.log("Where is your mother?");
+} else {
+  console.log("You are not old enough");
+}
+
+// Example 2
+
+const dice1 = 6;
+const dice2 = 3;
+
+if (dice1 === 6 || dice2 === 6){
+  console.log("You rolled a double");
+} else {
+  console.log("You didn't");
+}
+
+// DevEd tutorial for "String Concatenation"
+
+console.log("Hello my name is " + "Alex");
+
+// Example 2
+
+const examplename = "Alex";
+const exampleage = "24";
+
+console.log(
+  "Hello it's me " + examplename + " and I am only " + exampleage + " and my back hurts "
+);
+
+// Cleaner version example 
+
+console.log(`Hello it's me ${examplename} and I am only ${exampleage}`);
+
+// Example 3
+
+const stringname = "Alex Ox";
+const stringage = 24;
+
+const combined = stringname + stringage;
+
+console.log(typeof combined);
+
+// End of examples
 
 
+console.log("Beginning of Assignment 4.5")
+
+// 9/20/2023 Assignment 4.5 strings and condtionals 
+// "Create a concatenated string variable"
+const firstName = "Alex";
+const lastName = "Ox";
+const age1 = 24;
+
+const concatenatedString = `My name is ${firstName} ${lastName} and I am ${age1} years old.`;
+
+console.log(concatenatedString);
+
+// "'if' Condtional Statement"
+const isRaining = true;
+
+if (isRaining) {
+    console.log("Don't forget your umbrella!");
+} else {
+    console.log("No need for an umbrella today.");
+}
+
+// "Switch Statment"
+const dayOfWeek = "Monday";
+
+switch (dayOfWeek) {
+    case "Monday":
+        console.log("It's the start of the week.");
+        break;
+    case "Friday":
+        console.log("It's almost the weekend!");
+        break;
+    default:
+        console.log("It's a regular day.");
+}
+
+// "String Method"
+const originalString = "Hello, World!";
+const upperCaseString = originalString.toUpperCase();
+
+console.log(upperCaseString);
+
+// "Number Method"
+const pi = 3.14159265359;
+const roundedPi = pi.toFixed(2);
+
+console.log(roundedPi);
+
+// Completed on 9/20/2023
