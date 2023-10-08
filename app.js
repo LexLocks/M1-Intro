@@ -2,13 +2,13 @@
 
 // Declare variables
 let num = 42;
-let text = "Hello, World!";
+let text1 = "Hello, World!";
 let arr = [1, 2, 3];
 let obj = { name: "Alex", age: 24 };
 
 // Output variable values to the console
 console.log("Number variable:", num);
-console.log("String variable:", text);
+console.log("String variable:", text1);
 console.log("Array variable:", arr);
 console.log("Object variable:", obj);
 
@@ -51,16 +51,16 @@ console.log(rocks);
 
 
 // Create an object variable using const and assign values
-const person = {
+const human = {
     firstName: "Alex",
     lastName: "Ox",
     age: 24
 };
 
 // You can access the values of the object and log them to the console
-console.log("First Name:", person.firstName);
-console.log("Last Name:", person.lastName);
-console.log("Age:", person.age);
+console.log("First Name:", human.firstName);
+console.log("Last Name:", human.lastName);
+console.log("Age:", human.age);
 
 // Assignment 2.4: Variables completed on 09/10/2023
 
@@ -239,3 +239,114 @@ const roundedPi = pi.toFixed(2);
 console.log(roundedPi);
 
 // Completed on 9/20/2023
+
+// Started on 09/27/2023
+
+
+// objects lesson 10/07/23
+
+// Define an object representing a person
+var person = {
+  firstName: "Alex",
+  lastName: "Ox",
+  age: 24,
+  
+  hobbies: ["reading", "playing games", "coding"],
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    state: "TX"
+  }
+};
+
+// Accessing values within the object
+console.log(person.firstName); // Output: Alex
+console.log(person.age);       // Output: 24
+console.log(person.hobbies);   // Output: ["reading", "playing games", "coding"]
+console.log(person.address.city); // Output: Anytown
+
+// Object method example 
+
+// Define an object representing a person
+var persona = {
+  firstName: "Alex",
+  lastName: "OX",
+  age: 24,
+  isStudent: false,
+  hobbies: ["reading", "playing games", "coding"],
+  
+  // Method to display the full name
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  },
+
+  // Method to check if the person is a student
+  isStudentStatus: function() {
+    return this.isStudent ? "Yes" : "No";
+  }
+};
+
+// Call the methods of the object
+console.log("Full Name:", persona.fullName());          // Output: Full Name: Alex OX
+console.log("Is Student?", persona.isStudentStatus());   // Output: Is Student? No
+
+// Array example 
+
+// Define an array of numbers
+var numbers = [1, 2, 3, 4, 5];
+
+// Accessing elements in the array
+console.log(numbers[0]); // Output: 1
+console.log(numbers[2]); // Output: 3
+
+// Modifying elements in the array
+numbers[1] = 10;
+console.log(numbers); // Output: [1, 10, 3, 4, 5]
+
+// Adding elements to the end of the array
+numbers.push(6);
+console.log(numbers); // Output: [1, 10, 3, 4, 5, 6]
+
+// Getting the length of the array
+var lengths = numbers.lengths;
+console.log("Array length:", lengths); // Output: Array length: 6
+
+// Iterating through the array using a loop
+for (var i = 0; i < numbers.lengths; i++) {
+  console.log(numbers[i]);
+};
+
+// Array method example 
+
+// Define an array of fruits
+var fruits = ["apple", "banana", "cherry", "date"];
+
+// Adding an element to the end of the array
+fruits.push("fig");
+console.log(fruits); // Output: ["apple", "banana", "cherry", "date", "fig"]
+
+// Removing the last element from the array
+fruits.pop();
+console.log(fruits); // Output: ["apple", "banana", "cherry", "date"]
+
+// Adding an element to the beginning of the array
+fruits.unshift("apricot");
+console.log(fruits); // Output: ["apricot", "apple", "banana", "cherry", "date"]
+
+// Removing the first element from the array
+fruits.shift();
+console.log(fruits); // Output: ["apple", "banana", "cherry", "date"]
+
+// Finding the index of an element in the array
+var index = fruits.indexOf("banana");
+console.log("Index of 'banana':", index); // Output: Index of 'banana': 1
+
+// Removing an element by index
+fruits.splice(index, 1);
+console.log(fruits); // Output: ["apple", "cherry", "date"]
+
+// Joining array elements into a string
+var fruitString = fruits.join(", ");
+console.log("Fruits:", fruitString); // Output: Fruits: apple, cherry, date
+
+// Assignment completed on 10/08/23
